@@ -2,10 +2,9 @@ import pandas as pd
 df = pd.read_csv("mock_data.csv")
 males = 0
 females = 0
-cd = df[df['gender']!= "Male"]
-cde = df['gender']
-for c in cde:
-    if c == "Male":
+gender_column = df['gender']
+for row in gender_column:
+    if row == "Male":
         males += 1
     else:
         females += 1
