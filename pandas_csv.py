@@ -1,5 +1,4 @@
 import pandas as pd
-import datacompy
 df = pd.read_csv("mock_data.csv")
 males = 0
 females = 0
